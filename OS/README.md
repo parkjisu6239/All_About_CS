@@ -37,5 +37,4 @@
 |           | File Systems Implementation 2                  | [here](./File%20Systems%20Implementation%202.md)             |
 |           | Disk Management and Scheduling 1               | [here](./Disk%20Management%20and%20Scheduling%201.md)        |
 |           | Disk Management and Scheduling 2               | [here](./Disk%20Management%20and%20Scheduling%202.md)        |
-|           |                                                |                                                              |
 

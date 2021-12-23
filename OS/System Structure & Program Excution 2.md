@@ -6,7 +6,7 @@
 
 입출력 처리 방식은 크게 동기, 비동기로 나뉜다. 처리 방식은 다르지만, 둘다 작업 종료를 인터럽트를 발생시켜 알린다.
 
-![image-20211220193954623](System Structure & Program Excution 2.assets/image-20211220193954623.png)
+![image-20211220193954623](System%20Structure%20&%20Program%20Excution%202.assets/image-20211220193954623.png)
 
 ### 동기식(Synchronous) 입출력
 
@@ -46,7 +46,7 @@
 - IO를 수행하는 special instruction에 의해
 - Memory Mapped IO에 의해
 
-![image-20211220195300673](System Structure & Program Excution 2.assets/image-20211220195300673.png)
+![image-20211220195300673](System%20Structure%20&%20Program%20Excution%202.assets/image-20211220195300673.png)
 
 좌 : 메모리 접근 인스트럭션 따로, 디바이스 접근 인스트럭션 따로
 
@@ -58,7 +58,7 @@
 
 ## 저장장치 계층 구조
 
-![스크린샷 2021-12-20 오후 7.54.44](System Structure & Program Excution 2.assets/스크린샷 2021-12-20 오후 7.54.44.png)
+![스크린샷 2021-12-20 오후 7.54.44](System%20Structure%20&%20Program%20Excution%202.assets/스크린샷 2021-12-20 오후 7.54.44.png)
 
 - 휘발성 / 비휘발성
 - CPU에서 직접 접근 가능한 것(bite 단위로 작성된 것) / 그렇지 않은 것(sector 단위로 작성된 것)
@@ -68,7 +68,7 @@
 
 ## 프로그램 실행(메모리 load)
 
-![image-20211220195907905](System Structure & Program Excution 2.assets/image-20211220195907905.png)
+![image-20211220195907905](System%20Structure%20&%20Program%20Excution%202.assets/image-20211220195907905.png)
 
 
 
@@ -92,7 +92,7 @@
 
 ### 커널의 주소 공간
 
-![image-20211220201202147](System Structure & Program Excution 2.assets/image-20211220201202147.png)
+![image-20211220201202147](System%20Structure%20&%20Program%20Excution%202.assets/image-20211220201202147.png)
 
 Program Control Block : 실행중인 각 프로그램의 제어 정보를 담은 데이터로, 실행프로그램 하나 당 PCB 하나가 생성된다.
 

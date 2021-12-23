@@ -12,8 +12,8 @@
 | --------- | ---------------------------------------------- | ------------------------------------------------------------ |
 | ✅         | Introduction to Operating Systems              | [here](./Introduction%20to%20Operating%20Systems.md)         |
 | ✅         | System Structure & Program Excution 1          | [here](./System%20Structure%20&%20Program%20Excution%201.md) |
-|           | System Structure & Program Excution 2          | [here](./System%20Structure%20&%20Program%20Excution%202.md) |
-|           | Process 1                                      | [here](./Process%201.md)                                     |
+| ✅         | System Structure & Program Excution 2          | [here](./System%20Structure%20&%20Program%20Excution%202.md) |
+| ✅         | Process 1                                      | [here](./Process%201.md)                                     |
 |           | Process 2                                      | [here](./Process%202.md)                                     |
 |           | Process 3                                      | [here](./Process%203.md)                                     |
 |           | Process Management 1                           | [here](./Process%20Management%201.md)                        |

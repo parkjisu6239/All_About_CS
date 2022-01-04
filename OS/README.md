@@ -15,8 +15,7 @@
 | ✅         | System Structure & Program Excution 2          | [here](./System%20Structure%20&%20Program%20Excution%202.md) |
 | ✅         | Process                                        | [here](./Process.md)                                         |
 | ✅         | Thread                                         | [here](./Thread.md)                                          |
-|           | Process Management 1                           | [here](./Process%20Management%201.md)                        |
-|           | Process Management 2                           | [here](./Process%20Management%202.md)                        |
+|           | Process Management                             | [here](./Process%20Management.md)                            |
 |           | CPU Scheduling 1                               | [here](./CPU%20Scheduling%201.md)                            |
 |           | CPU Scheduling 2                               | [here](./CPU%20Scheduling%202.md)                            |
 |           | Process Synchronization 1                      | [here](./Process%20Synchronization%201.md)                   |

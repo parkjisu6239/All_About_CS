@@ -2,7 +2,9 @@
 
 
 
-## Process Creation
+## 프로세스의 생성과 종료
+
+### Process Creation
 
 Copy-on-write (COW)
 
@@ -29,7 +31,7 @@ Copy-on-write (COW)
 
 
 
-## Process Termination
+### Process Termination
 
 - 프로세스가 마지막 명령을 수행한 후 운영체제에게 이를 알려줌(`exit`)
 
@@ -47,7 +49,18 @@ Copy-on-write (COW)
 
 
 
-## fork() 시스템 콜
+
+
+## 프로세스와 관련한 시스템 콜
+
+- `fork()` : create a child(copy)
+- `exec()` : overlay new image
+- `wait()` : sleep until child is done
+- `exit()` : frees all the resources, notify parent
+
+
+
+### fork() 시스템 콜
 
 A process is created by the fork() system call.
 
@@ -60,7 +73,7 @@ A process is created by the fork() system call.
 
 
 
-## exec() 시스템콜
+### exec() 시스템콜
 
 A process can execute a differnet program by the `exec()` system call.
 
@@ -74,7 +87,7 @@ A process can execute a differnet program by the `exec()` system call.
 
 
 
-## wait() 시스템 콜
+### wait() 시스템 콜
 
 프로세스 A가 `wait()` 시스템 콜을 호출하면
 
@@ -87,7 +100,7 @@ A process can execute a differnet program by the `exec()` system call.
 
 
 
-## exit() 시스템 콜
+### exit() 시스템 콜
 
 프로세스의 종료를 의미한다.
 
@@ -109,7 +122,52 @@ A process can execute a differnet program by the `exec()` system call.
 
 
 
+## 프로세스간 협력
 
+### 프로세스의 종류
+
+**독립적 프로세스(Independent process)**
+
+- 프로세스는 각자의 주소 공간을 가지고 수행되므로 원칙적으로 하나의 프로세스는 다른 프로세스의 수행에 영향을 미치지 못함
+
+
+
+**협력 프로세스(Cooperating process)**
+
+- 프로세스 협력 매커니즘을 통해 하나의 프로세스가 다른 프로세스의 수행에 영향을 미칠 수 있음
+
+
+
+### 프로세스간 협력 매커니즘(IPC, Interprocess Communication)
+
+![image-20220105230629561](Process%20Management.assets/image-20220105230629561.png)
+
+
+
+#### 메시지를 전달하는 방법
+
+`message passing` 커널을 통해 메시지 전달, 프로세스 사이에 공유 변수를 일체 사용하지 않고 통신하는 시스템
+
+- Direct Communication
+
+  - 통신하려는 프로세스의 이름을 명시적으로 표시
+
+  ![image-20220105230512680](Process%20Management.assets/image-20220105230512680.png)
+
+- Indirect Communication
+
+  - Mail box(또는 port)를 통해 메시지를 간접 전달
+
+  ![image-20220105230525442](Process%20Management.assets/image-20220105230525442.png)
+
+
+
+#### 주소 공간을 공유하는 방법
+
+- `shared memory`
+  - 서로 다른 프로세스 간에도 일부 주소 공간을 공유하게 하는 shared memory 매커니즘이 있음
+  - 일단 kernel의 도움을 받아 shared memory를 세팅하고 그 이후에는 프로세스끼리 소통한다.
+- `thread` : thread는 사실상 하나의 프로세스이므로 프로세스 간 협력으로 보기는 어렵지만 동일한 process를 구성하는 thread들 간에는 주소 공간을 공유하므로 협력이 가능
 
 
 
@@ -122,3 +180,4 @@ ____
 **Reference**
 
 - https://core.ewha.ac.kr/publicview/C0101020140321144554159683?vmode=f
+- https://core.ewha.ac.kr/publicview/C0101020140325134428879622?vmode=f
